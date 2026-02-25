@@ -1,0 +1,32 @@
+# OpenHands 配置文件
+
+[llm]
+# LLM 模型名称 (LiteLLM 格式)
+model = "anthropic/claude-sonnet-4-5-20250929"
+
+# API 密钥
+api_key = "your-api-key-here"
+
+# 自定义 API 端点 (可选，用于本地模型或其他提供商)
+# base_url = "https://api.example.com"
+
+[agent]
+# Agent 类型
+# - code: 代码编写
+# - planning: 规划
+# - review: 代码审查
+type = "code"
+
+# 是否启用 CLI 模式
+cli_mode = true
+
+[server]
+# 服务端口
+port = 3000
+
+# 监听主机
+host = "localhost"
+
+[workspace]
+# 默认工作目录
+default_dir = "./workspace"
